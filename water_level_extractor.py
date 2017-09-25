@@ -1,5 +1,5 @@
 #### INPUT DATA
-path='/home/aramezani/Simulation/Leire/test/' #OpenFOAM folder
+path='/home/aramezani/Simulation/test/' #OpenFOAM folder
 output_file_name="waterlevel.csv"
 g_direction="Y"
 clip_position=[1.695, 0.3, 0.05]
@@ -11,6 +11,9 @@ from paraview.simple import *
 paraview.simple._DisableFirstRenderCameraReset()
 
 # create a new 'OpenFOAMReader'
+f=open(path+'a.foam',"w")
+f.close()
+
 afoam = OpenFOAMReader(FileName=path+'a.foam')
 afoam.MeshRegions = ['internalMesh']
 afoam.CellArrays = ['alpha.water']
