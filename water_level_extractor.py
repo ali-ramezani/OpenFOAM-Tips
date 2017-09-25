@@ -1,7 +1,7 @@
 #### INPUT DATA
 path='/home/aramezani/Simulation/test/' #OpenFOAM folder
 output_file_name="waterlevel.csv"
-g_direction="Y"
+g_direction="Y" #it could X,Y,Z direction
 clip_position=[1.695, 0.3, 0.05]
 #### END INPUT DATA
 
